@@ -1,0 +1,69 @@
+:root {
+    --font-roboto: "Roboto", Arial, sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+  
+    --athens-gray: #e9e8ec;
+    --dune: #242221;
+    --dune-rgba-2: rgba(36, 34, 33, 0.2);
+    --dune-rgba-5: rgba(36, 34, 33, 0.5);
+    --alabaster: #f8f8f8;
+    --true-v: #9174d8;
+    --true-v-rgba-5: rgba(145, 116, 216, 0.5);
+    --silver: #c7c7c7;
+    --blue-violet: #7a61b7;
+    --viking: #aae5e5;
+    --geraldine: #f98f8e;
+    --cornflower-blue: #727ef7;
+    --rajah: #fdd3d6;
+  }
+.admin-top-head{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--true-v);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  height: 30px;
+  background-color: var(--true-v);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+    top: -5px;
+  left: 130%;
+  font-size: 16px;
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--true-v) transparent transparent;
+  
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

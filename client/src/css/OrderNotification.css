@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+:root {
+    --font-roboto: "Roboto", Arial, sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+  
+    --athens-gray: #e9e8ec;
+    --dune: #242221;
+    --dune-rgba-2: rgba(36, 34, 33, 0.2);
+    --dune-rgba-5: rgba(36, 34, 33, 0.5);
+    --alabaster: #f8f8f8;
+    --true-v: #9174d8;
+    --true-v-rgba-5: rgba(145, 116, 216, 0.5);
+    --silver: #c7c7c7;
+    --blue-violet: #7a61b7;
+    --viking: #aae5e5;
+    --geraldine: #f98f8e;
+    --cornflower-blue: #727ef7;
+    --rajah: #fdd3d6;
+  }
+.Order-Notificaion-Container-main{
+    background: var( --athens-gray);
+    font-family: 'Poppins', sans-serif;
+    margin: 10%;
+}
+.Order-InputField_style{
+    margin-top: 10px;
+}
+.Order-Input-Value{
+    color: var( --blue-violet) !important;
+}
+.Order-Input-Value-textarea{
+    width: 200px !important;
+    overflow-x: scroll !important;
+}

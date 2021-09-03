@@ -1,0 +1,96 @@
+:root {
+    --font-roboto: "Roboto", Arial, sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+  
+    --athens-gray: #e9e8ec;
+    --dune: #242221;
+    --dune-rgba-2: rgba(36, 34, 33, 0.2);
+    --dune-rgba-5: rgba(36, 34, 33, 0.5);
+    --alabaster: #f8f8f8;
+    --true-v: #9174d8;
+    --true-v-rgba-5: rgba(145, 116, 216, 0.5);
+    --silver: #c7c7c7;
+    --blue-violet: #7a61b7;
+    --viking: #aae5e5;
+    --geraldine: #f98f8e;
+    --cornflower-blue: #727ef7;
+    --rajah: #fdd3d6;
+  }
+
+.PurchasedOrder_Form_main{
+width: 100%;
+height: 700px;
+background: #fff;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+}
+.PurchasedOrder_Form_content_main{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-top: 40px;
+}
+.PurchasedOrder_Form_content_Input_Main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.PurchasedOrder_Form_content_Input_Main>input{
+ width: 200px;
+ height: 40px;
+ margin: 10px;
+ font-size: 16px;
+ padding-left: 5px;
+}
+.PurchasedOrder_Form_content_Input_Main>i{
+  margin: 5px;
+  font-size: 50px;
+
+}
+.PurchasedOrder_Form_content_FilledResult_Main{
+width: 500px;
+height: 350px;
+padding: 10px;
+border: 2px solid var(--dune);
+border-radius: 10px;
+margin-top: 30px;
+padding: 20px 0px 0px 20px;
+overflow-y: auto;
+}
+.PurchasedOrder_Form_content_FilledResult{
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  margin-top: 5px;
+  
+}
+.PurchasedOrder_Form_content_FilledResult>span{
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.PurchasedOrder_Form_content_FilledResult>span:nth-child(1){
+}
+.PurchasedOrder_Form_content_FilledResult>i{
+  font-size: 30px;
+  margin-left: 20px;
+  color: red;
+}
+
+
+@media (max-width: 550px) {
+  .PurchasedOrder_Form_content_Input_Main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .PurchasedOrder_Form_content_FilledResult_Main{
+    width: 400px;
+  }
+}

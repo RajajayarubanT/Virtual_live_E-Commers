@@ -1,0 +1,143 @@
+:root {
+    --font-roboto: "Roboto", Arial, sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+  
+    --athens-gray: #e9e8ec;
+    --dune: #242221;
+    --dune-rgba-2: rgba(36, 34, 33, 0.2);
+    --dune-rgba-5: rgba(36, 34, 33, 0.5);
+    --alabaster: #f8f8f8;
+    --true-v: #9174d8;
+    --true-v-rgba-5: rgba(145, 116, 216, 0.5);
+    --silver: #c7c7c7;
+    --blue-violet: #7a61b7;
+    --viking: #aae5e5;
+    --geraldine: #f98f8e;
+    --cornflower-blue: #727ef7;
+    --rajah: #fdd3d6;
+  }
+.dynamic_upload_nav_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+
+}
+.dynamic_upload_nav_item{
+    margin: 5px;
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.dynamic_upload_nav_item_active{
+    background: var(--true-v);
+    color: #fff;
+}
+.dynamic_upload_nav_item>i{
+   font-size: 30px;
+}
+.dynamic_upload_nav_item>span{
+margin-left: 10px;
+   font-size: 16px;
+   font-weight: 500;
+}
+.dynamic_upload_form_main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    padding: 5%;
+    background: #fff;
+    border-radius: 10px;
+}
+.dynamic_upload_form_Items_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dynamic_upload_form_Items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.dynamic_upload_form_Items_sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.dynamic_upload_form_Items_sub>i{
+    margin-left: 20px;
+    cursor: pointer;
+   font-size: 40px;
+}
+.dynamic_upload_form_Items_sub>input{
+    height: 30px;
+    font-size: 15px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.dynamic_upload_form_Items_sub>input:focus{
+  outline: none;
+    border: 1px solid var(--true-v);
+}
+.dynamic_Items_sub_FilledData{
+    margin-top: 20px;
+    width: 350px;
+    
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px 10px 50px 10px;
+}
+.dynamic_Items_sub_FilledData_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.dynamic_Items_sub_FilledData_item>span{
+    font-size: 20px;
+    margin: 3px;  
+}
+.dynamic_Items_sub_FilledData_item>i{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 3px;
+    color: red;
+}
+.dynamic_upload_btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.dynamic_upload_btn>span{
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    background: var(--dune);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.3s;
+    font-size: 16px;
+
+}
+.dynamic_upload_btn>span:hover{
+    background: var(--true-v);
+ 
+}

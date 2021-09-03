@@ -1,0 +1,179 @@
+:root {
+  --font-roboto: "Roboto", Arial, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --athens-gray: #e9e8ec;
+  --dune: #242221;
+  --dune-rgba-2: rgba(36, 34, 33, 0.2);
+  --dune-rgba-5: rgba(36, 34, 33, 0.5);
+  --alabaster: #f8f8f8;
+  --true-v: #9174d8;
+  --true-v-rgba-5: rgba(145, 116, 216, 0.5);
+  --silver: #c7c7c7;
+  --blue-violet: #7a61b7;
+  --viking: #aae5e5;
+  --geraldine: #f98f8e;
+  --cornflower-blue: #727ef7;
+  --rajah: #fdd3d6;
+}
+
+.no_of_notification {
+  width: 20px;
+  z-index: 3;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--true-v);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.no_of_notification span {
+  color: white;
+  font-size: 10px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notify {
+  position: relative;
+}
+.notify-wrapper {
+  overflow-y: auto;
+  height: 200px;
+}
+div[id^="elem"] {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 0.1rem;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out; /* syncronize with SetTimeout = 500 */
+  font-size: 1.5rem;
+  color: var(--true-v);
+  text-transform: uppercase;
+}
+div[id^="elem"] > :nth-child(1) {
+  width: 100px;
+}
+div[id^="elem"] > :nth-child(2) {
+  color: var(--dune);
+  font-weight: bolder;
+  font-size: 15px;
+}
+div[id^="elem"]:hover > :nth-child(2) {
+  color: var(--viking);
+  font-weight: bolder;
+  font-size: 15px;
+}
+div[id^="elem"]:hover {
+  background-color: var(--dune);
+  color: #fff;
+}
+
+div[id^="elem"] span {
+  float: right;
+}
+
+div[id^="elem"] span:hover {
+  cursor: pointer;
+}
+.notification-container {
+  width: 80%;
+}
+.option-notify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.option-notify span {
+  padding: 0px 0px 0px 10px;
+}
+
+.not {
+  color: var(--geraldine);
+}
+div[id^="elem"]:hover .not {
+  color: white;
+  font-weight: bolder;
+}
+
+.paymentOrderBtn_Main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.TotalamountContainer {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0;
+  padding-left: 100px;
+  background: var(--dune);
+  color: #fff;
+  transition: all 0.3s;
+  font-size: 18px;
+}
+.notification-container-label {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 0.1rem;
+  background-color: var(--true-v);
+  transition: all 0.3s ease-in-out; /* syncronize with SetTimeout = 500 */
+  font-size: 1.5rem;
+  color: #fff;
+}
+.notification-wrapper-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.notification-container-label :nth-child(1) {
+  width: 100px;
+}
+.notification-wrapper {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 30px;
+  padding: 10px;
+}
+@media screen and (max-width: 800px) {
+  .notification-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .notification-container-label :nth-child(1) {
+    width: 50px;
+  }
+  div[id^="elem"] > :nth-child(1) {
+    width: 50px;
+  }
+  .TotalamountContainer {
+    padding-left: 25px;
+  }
+}
